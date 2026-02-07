@@ -1,3 +1,40 @@
+#filters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+
+    .filter-group {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-xs);
+
+        label {
+            font-size: var(--font-size-md);
+            color: var(--clr-text-primary);
+        }
+
+        select {
+            width: 100%;
+            min-width: 0;
+            padding: var(--space-sm) var(--space-md);
+            font-size: var(--font-size-md);
+            border: 1px solid var(--clr-border);
+            border-radius: var(--radius-md);
+            background-color: var(--clr-surface);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    #filters {
+        width: 100%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .routes-grid {
     display: flex;
     flex-direction: column;
